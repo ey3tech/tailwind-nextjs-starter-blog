@@ -2,11 +2,12 @@ const siteMetadata = {
   title: 'TerrySpace',
   author: 'Terry Bazemore Jr.',
   headerTitle: 'TBJ',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description:
+    "Hey, I'm Terry. I'm a tech expert who loves to learn new things, and I love to share my knowledge with everyone!",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://tblog.vercel.app',
+  siteRepo: 'https://github.com/ey3tech/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
