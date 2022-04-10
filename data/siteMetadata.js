@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
+  title: 'TerrySpace',
+  author: 'Terry Bazemore Jr.',
+  headerTitle: 'TBJ',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
@@ -10,12 +10,13 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  email: 'tbazemore@ey3.tech',
+  github: 'https://github.com/ey3tech',
+  twitter: 'https://twitter.com/ey3tech',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/company/ey3-technologies',
+  bio: "Hey, I'm Terry. Welcome to my blog! I'm a tech expert who loves to learn new things, and I love to share my knowledge with everyone!",
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
