@@ -4,7 +4,6 @@ import Image from '@/components/Image'
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github, website } =
     frontMatter
-  console.log(`from layout: ${frontMatter.github}`)
 
   return (
     <>
