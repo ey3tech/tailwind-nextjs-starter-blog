@@ -5,7 +5,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
-import NewsletterForm from '@/components/NewsletterForm'
+// import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 1
 
@@ -29,12 +29,12 @@ export default function Home({ posts }) {
     <div>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div>
-        <div className="w-3/4 mx-auto">
+        <div className="mx-auto w-3/4">
           <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-            <h1 className="text-3xl font-extrabold leading-9 text-center align-middle tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="text-center align-middle text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hey there, I love tech <span className="wave">👋🏽</span>
             </h1>
-            <p className="text-lg text-center leading-7 text-gray-500 dark:text-gray-400">
+            <p className="text-center text-lg leading-7 text-gray-500 dark:text-gray-400">
               {siteMetadata.bio}
             </p>
           </div>
@@ -46,12 +46,12 @@ export default function Home({ posts }) {
             .map((frontMatter) => {
               const { slug, date, title, summary, tags } = frontMatter
               return (
-                <li key={slug} className="bg-gray-100 dark:bg-gray-800 p-5 py-12 rounded-lg">
+                <li key={slug} className="rounded-lg bg-gray-100 p-5 py-12 dark:bg-gray-800">
                   <article>
                     <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                       <dl className="pr-5">
                         <dt className="sr-only">Published on</dt>
-                        <dd className="text-base font-medium leading-6 text-center text-gray-500 dark:text-gray-400">
+                        <dd className="text-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                           <time dateTime={date}>{formatDate(date)}</time>
                         </dd>
                       </dl>
@@ -73,7 +73,7 @@ export default function Home({ posts }) {
                               ))}
                             </div>
                           </div>
-                          <div className="prose max-w-none text-gray-500 dark:text-gray-400 overflow-hidden overflow-ellipsis">
+                          <div className="prose max-w-none overflow-hidden overflow-ellipsis text-gray-500 dark:text-gray-400">
                             {summary}
                           </div>
                         </div>
@@ -98,7 +98,7 @@ export default function Home({ posts }) {
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors mt-2 p-3 rounded-lg hover:bg-gray-100 hover:dark:bg-gray-800"
+            className="mt-2 rounded-lg p-3 text-primary-500 transition-colors hover:bg-gray-100 hover:text-primary-600 hover:dark:bg-gray-800 dark:hover:text-primary-400"
             aria-label="all posts"
           >
             All Posts &rarr;
