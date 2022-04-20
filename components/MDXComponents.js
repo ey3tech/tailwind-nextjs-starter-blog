@@ -6,8 +6,14 @@ import CustomLink from './Link'
 import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
+// // import { CodePen, Tweet, YouTube, Gist } from "mdx-embed";
 
 export const MDXComponents = {
+  //? These will be able to embed in MDX as tags
+  // CodePen,
+  // Tweet,
+  // YouTube,
+  // Gist,
   Image,
   TOCInline,
   a: CustomLink,
