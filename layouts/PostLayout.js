@@ -56,10 +56,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <ul className="flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
                   {authorDetails.map((author) => (
                     <li
-                      className="flex transition-colors rounded-lg p-3 hover:bg-gray-200 hover:dark:bg-gray-800"
+                      className="flex rounded-lg p-3 transition-colors hover:bg-gray-200 hover:dark:bg-gray-800"
                       key={author.name}
                     >
-                      <Link href="/about" className="flex h-full space-x-5 items-center w-full">
+                      <Link href="/about" className="flex h-full w-full items-center space-x-5">
                         {author.avatar && (
                           <Image
                             src={author.avatar}
